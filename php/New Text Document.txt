@@ -1,0 +1,104 @@
+php không phân biệt chữ hoa chữ thường
+
+tuy nhiên biến phân biệt chữ hoa chữ thường
+
+chú thích : dùng "//" hoặc "#" hoặc "/* */"
+
+biến
+$<Variables name> = <Value> 
+ví dụ $x = 5;
+	$y = "john";
+vd1-------------------------
+<?php
+$txt = "Hanoi";
+echo "I love $txt!";
+?>
+vd2-----------------------
+<?php
+$txt = "Hanoi";
+echo "I love ". $txt ."!";
+?>
+vd3------------------------
+<?php
+$x = 5;
+$y = 4;
+echo $x + $y;
+?>
+
+
+các kiểu số trong php---------------
+Interger
+Float
+Bôlean
+Array
+Object
+NULL
+Resource
+
+
+<?php 
+var_dump(5);
+var_dump("jhon");
+var_dump(3.14);
+var_dump(true);
+var_dump([2,3,56]);
+var_dump(NULL);
+?>
+
+gán nhiều giá trị cho biến------------
+<?php
+$x=$y=$z="Fruit";
+echo $x;
+echo $y;
+echo $z;
+?>
+
+biến------
+local : cục bô
+global : toàn cục
+static : tĩnh 
+
+ví dụ
+<?php
+$x = 5;
+function myTest() {
+	echo "<p>Variable x inside function is: $x<p>";
+}
+myTest();
+echo "<p>Variable x outside function is: $x<p>";
+?>
+------------Thêm từ khóa global để truy cập biến 
+-----------hàm
+strtoupper() chuyển thành chữ hoa
+strtolower() chuyển thành chữ thường
+str_replace() thay thế
+strrev() đảo ngược
+
+
+--------------------SỐ 
+PHP_INT_MAX
+PHP_INT_MIN
+PHP_INT SIZE
+
+is_int()
+is_interger()
+is_long()
+
+
+PHP_FLOAT_MAX
+PHP_FLOAT_MIN
+PHP_FLOAT_DIG
+PHP_FLOAT_EPSILON
+
+is_finite()
+is_infinite()
+
+
+đưa vào một họ tên giới tính tuổi đưa ra lời xin chào
+<18 chào em
+40 anh chị
+40 60 bac
+60 ong ba
+
+tao một mảng gom 1o sinh vien và dung foreach in ra 10 sinh vien đó
+tạo một mảng có thông tin id ten tuoi điểm sau đó in thông tin sinh viên ra màn hình
